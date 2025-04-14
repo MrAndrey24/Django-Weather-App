@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+  <h1>Weather Search</h1>
+  <form method="get" action="{% url 'weather_api:get_weather' %}">
+    {% csrf_token %}
+    <div class="mb-3">
+      <label for="city" class="form-label">Enter City</label>
+      <input type="text" class="form-control" id="city" name="city" placeholder="e.g., London">
+    </div>
+    <button type="submit" class="btn btn-primary">Get Weather</button>
+  </form>
+</div>
+{% endblock %}

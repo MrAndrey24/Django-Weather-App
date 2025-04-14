@@ -3,5 +3,6 @@ from . import views
 
 app_name = 'weather_api'
 urlpatterns = [
-    path('<str:city>', views.get_weather, name='get_weather'),
+    path('', views.index, name='index'),
+    path('get_weather/', views.get_weather, name='get_weather'),
 ]

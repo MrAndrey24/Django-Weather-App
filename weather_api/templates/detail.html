@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+  <h1>Weather Details for {{ city }}</h1>
+  <ul class="list-group">
+    <li class="list-group-item"><strong>Temperature:</strong> {{ temperature }}°C</li>
+    <li class="list-group-item"><strong>Humidity:</strong> {{ humidity }}%</li>
+    <li class="list-group-item"><strong>Description:</strong> {{ description }}</li>
+    <li class="list-group-item"><strong>Icon:</strong> {{ icon }}</li>
+  </ul>
+</div>
+{% endblock %}
