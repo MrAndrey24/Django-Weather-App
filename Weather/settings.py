@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-q9u+m!5t)-orl)d7-6u3(_3$0*m)6v$xb)n&w5yp4a8s-%%!g-'
-API_KEY = '95TR97G6WZ8U5395PGD9FRLGQ'
+API_KEY = ''
 BASE_URL = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/'
 
 # SECURITY WARNING: don't run with debug turned on in production!
